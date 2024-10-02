@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+    <title>Benjamin Vanbaelinghem</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+</head>
+
+<body class="bg-gray-100">
+    <header class="relative">
+        <nav class="bg-white border-gray-200 dark:bg-gray-900 fixed top-0 left-0 w-full z-10">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Benjamin
+                        Vanbaelinghem</span>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li><a href="#Apropos"
+                                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                                aria-current="page">À propos</a></li>
+                        <li><a href="#Competences"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Compétences</a>
+                        </li>
+                        <li><a href="#Experiences"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Expériences</a>
+                        </li>
+                        <li><a href="#Formations"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Formations</a>
+                        </li>
+                        <li><a href="#Projet"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projet</a>
+                        </li>
+                        <li><a href="#Contact"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <a href="#" id="back-to-top"
+        class="fixed bottom-8 right-8 p-3 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-700 transition-opacity duration-300 opacity-0">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+
+
+    <div class="relative w-full h-[500px] lg:h-[500px]">
+        <img src="assets/NiceNight.jpg" alt="" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-blue-500 opacity-20"></div>
+        <img src="assets/Profil.png" alt="Benjamin"
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full w-64 h-64 object-cover z-9 hover:scale-105">
+    </div>
+
+
+    <div class="relative z-9 text-center mt-[-110px]">
+        <h1 class="text-3xl font-bold text-white">Benjamin Vanbaelinghem</h1>
+        <p class="text-xl text-gray-600 text-white">Développeur Full-Stack</p>
+    </div>
+
+
+    <div class="flex justify-center mt-4 space-x-4 relative z-9">
+        <a href="https://www.linkedin.com/in/benjamin-vanbaelinghem-39a00825a/" target="_blank" class="block">
+            <img src="assets/linkedin.png" alt="LinkedIn"
+                class="w-24 h-auto rounded-full transition duration-300 transform hover:scale-105">
+        </a>
+        <a href="assets/CV_Vanbaelinghem_Benjamin.pdf" download="Benjamin_Vanbaelinghem_CV.pdf" class="block">
+            <div class="w-24 h-24 rounded-full bg-white overflow-hidden flex items-center justify-center shadow">
+                <img src="assets/cvicon.png" alt="cvicon"
+                    class="w-full h-full object-contain transition duration-300 transform hover:scale-105">
+            </div>
+        </a>
+    </div>
+
+
+
+
+
+    <div id="Apropos"></div>
+    <div
+        class="container lg:mx-auto md:mx-auto w-4/5 mx-auto mt-16 md:w-3/4 lg:w-3/6 border-2 border-gray-300 p-5 shadow-lg rounded-lg">
+        <!-- Section Qui suis-je -->
+        <div class="w-full">
+            <h1 class="text-3xl font-bold">Qui suis-je ?</h1>
+            <p class="pt-6">
+                🔍 À la recherche d'une alternance à partir du 30 décembre : 3 jours en entreprise et 2 jours à Epitech.
+            </p>
+            <p class="pt-6">
+                🎓 Étudiant en MSc Pro à Epitech - Nice, passionné par le développement web et les technologies
+                innovantes.
+            </p>
+            <p class="pt-6">
+                Après trois ans en école de commerce international, je me reconvertis dans l'informatique avec un Bac+2
+                en développement web. Actuellement en 3ème année de MSc Pro, je me spécialise en architecture de
+                systèmes d'information. Mon objectif : obtenir un Bac+5.
+            </p>
+            <p class="pt-6 font-semibold">Qualités personnelles :</p>
+            <ul class="list-disc list-inside pt-2">
+                <li>Capacité d’adaptation</li>
+                <li>Autonomie et organisation</li>
+                <li>Esprit d’équipe</li>
+                <li>Curiosité et motivation à relever des défis</li>
+            </ul>
+            <p class="pt-6 font-semibold">Loisirs :</p>
+            <ul class="list-disc list-inside pt-2">
+                <li>Moto</li>
+                <li>Ski</li>
+                <li>Formule 1</li>
+            </ul>
+            <p class="pt-6">
+                N'hésitez pas à me contacter pour échanger ou collaborer ! 💼🤝
+            </p>
+        </div>
+
+        <!-- Section À propos -->
+        <div class="w-full mt-8">
+            <h1 class="text-3xl font-bold">À propos</h1>
+            <div class="grid grid-cols-2 gap-x-4 pt-8">
+                <p class="font-bold">Localisation</p>
+                <p>Nice et ses alentours</p>
+            </div>
+            <div class="grid grid-cols-2 gap-x-4 pt-2">
+                <p class="font-bold">Permis</p>
+                <p>A2 et B</p>
+            </div>
+            <div class="grid grid-cols-2 gap-x-4 pt-2">
+                <p class="font-bold">Mail</p>
+                <p class="break-words"><a href="mailto:benjamin.vanbaelinghem@epitech.eu"
+                        class="text-blue-600 hover:underline">benjamin.vanbaelinghem@epitech.eu</a></p>
+            </div>
+            <div class="grid grid-cols-2 gap-x-4 pt-2">
+                <p class="font-bold">Téléphone</p>
+                <p><a href="tel:+33612345678" class="text-blue-600 hover:underline">06 12 34 56 78</a></p>
+            </div>
+            <div class="grid grid-cols-2 gap-x-4 pt-2">
+                <p class="font-bold">Langues</p>
+                <p>Anglais professionnel</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="Competences"></div>
+    <div class="container mx-auto mt-32 w-4/5 ">
+        <h2 class="text-3xl font-bold text-center mb-8">Compétences Techniques</h2>
+        <div
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 border-2 border-gray-300 p-5 shadow-lg rounded-lg">
+            <img src="assets/technos/adobe-xd-icon-free-png.png" alt="Image 1" class="w-full h-20 object-contain">
+            <img src="assets/technos/bootstrap.png" alt="Image 2" class="w-full h-20 object-contain">
+            <img src="assets/technos/CSS.png" alt="Image 3" class="w-full h-20 object-contain">
+            <img src="assets/technos/git.png" alt="Image 4" class="w-full h-20 object-contain">
+            <img src="assets/technos/HTML5_Badge.svg.png" alt="Image 5" class="w-full h-20 object-contain">
+            <img src="assets/technos/JS.png" alt="Image 6" class="w-full h-20 object-contain">
+            <img src="assets/technos/node_js_logo.png" alt="Image 7" class="w-full h-20 object-contain">
+            <img src="assets/technos/PHP-Logo-PNG-Image-Background.png" alt="Image 8"
+                class="w-full h-20 object-contain">
+            <img src="assets/technos/Python-logo-notext.svg.png" alt="Image 9" class="w-full h-20 object-contain">
+            <img src="assets/technos/SQL.png" alt="Image 10" class="w-full h-20 object-contain">
+            <img src="assets/technos/symfony.png" alt="Image 11" class="w-full h-20 object-contain">
+            <img src="assets/technos/tailwind-css-logo-89E99D7181-seeklogo.com.png" alt="Image 12"
+                class="w-full h-20 object-contain">
+            <img src="assets/technos/wordpress.png" alt="Image 14a" class="w-full h-20 object-contain">
+            <img src="assets/technos/linux-logo-0.png" alt="Image 15" class="w-full h-20 object-contain">
+            <img src="assets/technos/fedora.png" alt="Image 16" class="w-full h-20 object-contain">
+        </div>
+    </div>
+    <div id="Experiences"></div>
+    <div class=" container mx-auto mt-32 w-4/5 ">
+        <h2 class="text-3xl font-bold text-center mb-8">Expériences Professionnelles</h2>
+        <div
+            class="flex flex-col md:flex-row justify-between fade-in-container opacity-0 transition-opacity duration-[2000ms] border-2 border-gray-300 shadow-lg">
+            <div class="w-full md:w-1/2 pr-0 md:pr-4 bg-[#111827] text-white text-center pt-4">
+                <h1 class="text-xl text-left mx-6">2023 - 2024</h1>
+                <p class="text-3xl font-bold pt-12 pb-12 lg:pb-2 md:pb-2">Maelcorp - Nice</p>
+            </div>
+            <div class="w-full md:w-1/2 pl-0 md:pl-4 mt-8 md:mt-0 pt-4 flex flex-col justify-between text-center">
+                <h1 class="text-xl font-bold">Developpeur Web</h1>
+                <div class="flex items-center mt-4">
+                    <img src="assets/Logo/Maelcorp.png" alt="Logo de l'entreprise"
+                        class="w-24 h-24 object-contain mx-auto bg-black rounded-lg"> <!-- Logo -->
+                </div>
+                <div class="pt-12 text-center pb-12 lg:pb-2 md:pb-2">
+                    <ul class="mx-auto">
+                        <li>Expertise solide en développement web avec une
+                            expérience pratique dans la création de sites
+                            dynamiques et la gestion de projets, afin d’optimiser
+                            l’expérience utilisateur.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div
+            class="flex flex-col md:flex-row justify-between fade-in-container opacity-0 transition-opacity duration-[2000ms] border-2 border-gray-300 shadow-lg mt-14">
+            <div class="w-full md:w-1/2 pr-0 md:pr-4 bg-[#111827] text-white text-center pt-4">
+                <h1 class="text-xl text-left mx-6">2019-2021</h1>
+                <p class="text-3xl font-bold pt-12 pb-12 lg:pb-2 md:pb-2">Pepsico - Belgique</p>
+            </div>
+            <div class="w-full md:w-1/2 pl-0 md:pl-4 mt-8 md:mt-0 pt-4 flex flex-col justify-between text-center">
+                <h1 class="text-xl font-bold">Ouvrirer Agroalimentaire</h1>
+                <div class="flex items-center mt-4">
+                    <img src="assets/Logo/Pepsico-Logo.png" alt="Logo de l'entreprise"
+                        class="w-44 h-full object-contain mx-auto">
+                </div>
+                <div class="pt-12 text-center pb-12 lg:pb-2 md:pb-2">
+                    <ul class="list-disc list-inside mx-auto">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div
+            class="flex flex-col md:flex-row justify-between fade-in-container opacity-0 transition-opacity duration-[2000ms] border-2 border-gray-300 shadow-lg mt-14">
+            <div class="w-full md:w-1/2 pr-0 md:pr-4 bg-[#111827] text-white text-center pt-4">
+                <h1 class="text-xl text-left mx-6 ">2020</h1>
+                <p class="text-3xl font-bold pt-12 pb-12 lg:pb-2 md:pb-2">Grand port maritime de Dunkerque</p>
+            </div>
+            <div class="w-full md:w-1/2 pl-0 md:pl-4 mt-8 md:mt-0 pt-4 flex flex-col justify-between text-center">
+                <h1 class="text-xl font-bold">Marketing et Transport intérieurs</h1>
+                <div class="flex items-center mt-4">
+                    <img src="assets/Logo/dkportlogo.webp" alt=" Logo de l'entreprise"
+                        class="w-36 h-full object-contain mx-auto">
+                </div>
+                <div class="pt-12 text-center pb-12 lg:pb-2 md:pb-2">
+                    <ul class="list-disc list-inside mx-auto">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Formations"></div>
+    <div class=" container mx-auto mt-32 w-4/5 ">
+        <h2 class="text-3xl font-bold text-center mb-8">Formations</h2>
+        <div
+            class="flex flex-col md:flex-row justify-between fade-in-container opacity-0 transition-opacity duration-[2000ms] border-2 border-gray-300 shadow-lg">
+            <div class="w-full md:w-1/2 pr-0 md:pr-4 bg-[#111827] text-white text-center pt-4">
+                <h1 class="text-xl text-left mx-6">2024 - 2027</h1>
+                <p class="text-3xl font-bold pt-12 pb-12 lg:pb-2 md:pb-2">Epitech - Nice</p>
+            </div>
+            <div class="w-full md:w-1/2 pl-0 md:pl-4 mt-8 md:mt-0 pt-4 flex flex-col justify-between text-center">
+                <h1 class="text-xl font-bold">Architecte des Systèmes d’Information</h1>
+                <div class="flex items-center mt-4">
+                    <img src="assets/Logo/epitech.png" alt="Logo de l'entreprise"
+                        class="w-24 h-24 object-contain mx-auto">
+                </div>
+                <div class="pt-12 text-center pb-12 lg:pb-2 md:pb-2">
+                    <ul class="mx-auto">
+                        <li>RNCP38114 I Niv.7</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div
+            class="flex flex-col md:flex-row justify-between fade-in-container opacity-0 transition-opacity duration-[2000ms] border-2 border-gray-300 shadow-lg mt-14">
+            <div class="w-full md:w-1/2 pr-0 md:pr-4 bg-[#111827] text-white text-center pt-4">
+                <h1 class="text-xl text-left mx-6 ">2023</h1>
+                <p class="text-3xl font-bold pt-12 pb-12 lg:pb-2 md:pb-2">Greta - Nice</p>
+            </div>
+            <div class="w-full md:w-1/2 pl-0 md:pl-4 mt-8 md:mt-0 pt-4 flex flex-col justify-between text-center">
+                <h1 class="text-xl font-bold">Développeur web & web mobile</h1>
+                <div class="flex items-center mt-4">
+                    <img src="assets/Logo/greta.jpg" alt="Logo de l'entreprise"
+                        class="w-24 h-24 object-contain mx-auto">
+                </div>
+                <div class="pt-12 text-center pb-12 lg:pb-2 md:pb-2">
+                    <ul class="mx-auto">
+                        <li>RNCP37674 I Niv. 5</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div
+            class="flex flex-col md:flex-row justify-between fade-in-container opacity-0 transition-opacity duration-[2000ms] border-2 border-gray-300 shadow-lg mt-14">
+            <div class="w-full md:w-1/2 pr-0 md:pr-4 bg-[#111827] text-white text-center pt-4">
+                <h1 class="text-xl text-left mx-6">2022</h1>
+                <p class="text-3xl font-bold pt-12 pb-12 lg:pb-2 md:pb-2">OpenClassrooms - Distanciel</p>
+            </div>
+            <div class="w-full md:w-1/2 pl-0 md:pl-4 mt-8 md:mt-0 pt-4 flex flex-col justify-between text-center">
+                <h1 class="text-xl font-bold">Prép'fullstack</h1>
+                <div class="flex items-center mt-4">
+                    <img src="assets/Logo/OpenClassroom.jpg" alt="Logo de l'entreprise"
+                        class="w-44 h-full object-contain mx-auto">
+                </div>
+                <div class="pt-12 text-center pb-12 lg:pb-2 md:pb-2">
+                    <ul class="list-disc list-inside mx-auto">
+                        <li>Création d'un site internet pour une agence
+                            immobilière avec Wordpress</li>
+                        <li>Réalisation d’un site dynamique pour un groupe
+                            bancaire fictif (extranet)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div
+            class="flex flex-col md:flex-row justify-between fade-in-container opacity-0 transition-opacity duration-[2000ms] border-2 border-gray-300 shadow-lg mt-14">
+            <div class="w-full md:w-1/2 pr-0 md:pr-4 bg-[#111827] text-white text-center pt-4">
+                <h1 class="text-xl text-left mx-6">2020</h1>
+                <p class="text-3xl font-bold pt-12 pb-12 lg:pb-2 md:pb-2">Iscid-co - Dunkerque</p>
+            </div>
+            <div class="w-full md:w-1/2 pl-0 md:pl-4 mt-8 md:mt-0 pt-4 flex flex-col justify-between text-center">
+                <h1 class="text-xl font-bold">Commerce et management à l'international</h1>
+                <div class="flex items-center mt-4">
+                    <img src="assets/Logo/iscidCo.jpg" alt="Logo de l'entreprise"
+                        class="w-44 h-full object-contain mx-auto">
+                </div>
+                <div class="pt-12 text-center pb-12 lg:pb-2 md:pb-2">
+                    <ul class="mx-auto">
+                        <li>Bac+3 Commerce et management à l'international</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div
+            class="flex flex-col md:flex-row justify-between fade-in-container opacity-0 transition-opacity duration-[2000ms] border-2 border-gray-300 shadow-lg mt-14">
+            <div class="w-full md:w-1/2 pr-0 md:pr-4 bg-[#111827] text-white text-center pt-4">
+                <h1 class="text-xl text-left mx-6">2017</h1>
+                <p class="text-3xl font-bold pt-12 pb-12 lg:pb-2 md:pb-2">Ef Santa Barbara - USA</p>
+            </div>
+            <div class="w-full md:w-1/2 pl-0 md:pl-4 mt-8 md:mt-0 pt-4 flex flex-col justify-between text-center">
+                <h1 class="text-xl font-bold">Academic Abroad Semester Diploma</h1>
+                <div class="flex items-center mt-4">
+                    <img src="assets/Logo/EF_Education_First_logo.jpg" alt="Logo de l'entreprise"
+                        class="w-24 h-24 object-contain mx-auto">
+                </div>
+                <div class="pt-12 text-center pb-12 lg:pb-2 md:pb-2">
+                    <ul class="mx-auto">
+                        <li>Semestre à l'étranger afin de parfaire mon Anglais</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Contact"></div>
+    <div class="container mx-auto mt-28 w-7/8">
+        <h2 class="text-3xl font-bold text-center mb-8">Contact</h2>
+        <div
+            class="p-8 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 border-2 border-gray-300 shadow-lg">
+
+            <div class="text-center">
+                <p class="font-bold">Situation géographique</p>
+                <div class="flex justify-center mt-4">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d138326.2330204151!2d7.217411469854597!3d43.68866827163205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdd0106a852d31%3A0x40819a5fd979a70!2sNice!5e0!3m2!1sfr!2sfr!4v1727427325262!5m2!1sfr!2sfr"
+                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <p class="font-bold">Email</p>
+                <a href="mailto:benjamin.vanbaelinghem@epitech.eu"
+                    class="block mt-4 text-blue-600 hover:underline">benjamin.vanbaelinghem@epitech.eu</a>
+                <a href="mailto:benjamin.vanbaelinghem@epitech.eu">
+                    <img src="assets/free-mail-icon-142-thumb.png" class="w-16 h-16 mx-auto mt-2" alt="Email icon">
+                </a>
+            </div>
+
+            <div class="text-center">
+                <p class="font-bold">Téléphone</p>
+                <a href="tel:0671648260" class="block mt-4 text-blue-600 hover:underline">06.71.64.82.60</a>
+                <a href="tel:0671648260">
+                    <img src="assets/telephone.svg" class="w-16 h-16 mx-auto mt-2" alt="Téléphone icon">
+                </a>
+            </div>
+
+            <div class="text-center">
+                <p class="font-bold">LinkedIn</p>
+                <a href="https://www.linkedin.com/in/benjamin-vanbaelinghem-39a00825a/" target="_blank"
+                    class="block mt-4 text-blue-600 hover:underline">Mon LinkedIn</a>
+                <a href="https://www.linkedin.com/in/benjamin-vanbaelinghem-39a00825a/" target="_blank">
+                    <img src="assets/linkedin.svg" class="w-16 h-16 mx-auto mt-2" alt="LinkedIn icon">
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!-- PROJET -->
+    <div id="Projet"></div>
+    <div class="container mx-auto mt-28 w-7/8">
+        <h2 class="text-3xl font-bold text-center mb-8">Focus sur un projet</h2>
+        <div
+            class="p-8 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 border-2 border-gray-300 shadow-lg">
+            <a href="https://people.restaurant/"><img src="assets/People-By-Latoll-StLaurentDuVar_20230401091359.JPG"
+                    alt="Restaurant" class="w-full h-auto rounded hover:scale-105"></a>
+
+            <div class="text-center md:text-left"> <!-- Alignement à gauche sur tablette -->
+                <p class="font-bold text-3xl">Restaurant People by l'Atoll à Saint-Laurent-du-Var</p>
+                <p class="block mt-6">
+                    🎯 Création du site internet pour le restaurant People by l'Atoll | Gestion de projet de A à Z en
+                    équipe
+
+                    J'ai participé à la création complète du site internet pour le restaurant People by l'Atoll, un
+                    projet que j'ai mené avec une équipe dédiée du début à la fin.
+                </p>
+                <p class="block mt-6">
+                    🔧 Conception et intégration :
+                    En collaboration avec mon équipe, j'ai conçu et mis en place un système de réservation en ligne
+                    performant, avec une gestion en temps réel des réservations, garantissant une expérience fluide et
+                    optimisée pour le restaurant et ses clients.
+                </p>
+                <p class="block mt-6">
+                    🚀 Optimisation de l'expérience utilisateur :
+                    Nous avons travaillé ensemble pour offrir une interface utilisateur intuitive et réactive,
+                    facilitant la navigation et améliorant l'accès aux services du restaurant, tout en prenant en compte
+                    les retours des clients et des stakeholders.
+                </p>
+                <p class="block mt-6">
+                    🔐 Sécurisation des données :
+                    En équipe, nous avons mis en place des solutions robustes pour sécuriser les données sensibles,
+                    assurant ainsi la confidentialité et la sécurité des informations des utilisateurs et du restaurant.
+                    Ce projet m'a permis de renforcer mes compétences en travail d'équipe, gestion de projet, design
+                    d'interfaces et sécurité web, tout en collaborant efficacement avec différents départements pour
+                    atteindre nos objectifs communs.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="flex justify-center items-center">
+                <a href="#" class="text-center">
+                    <span class="text-2xl font-semibold whitespace-nowrap dark:text-white">Benjamin Vanbaelinghem</span>
+                </a>
+            </div>
+
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 . All Rights
+                Reserved.</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
