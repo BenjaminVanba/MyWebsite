@@ -121,11 +121,34 @@
                 <li>Curiosité et motivation à relever des défis</li>
             </ul>
             <p class="pt-6 font-semibold">Loisirs :</p>
-            <ul class="list-disc list-inside pt-2">
-                <li>Moto</li>
-                <li>Ski</li>
-                <li>Formule 1</li>
-            </ul>
+            <div class="flex flex-col md:flex-row justify-between md:items-center pr-4">
+                <ul class="list-disc list-inside pt-2 md:space-y-8">
+                    <li>Moto</li>
+                    <li>Ski</li>
+                    <li>Formule 1</li>
+                </ul>
+                <div class="flex flex-col mt-4 space-y-2 md:flex-row md:space-y-0 md:space-x-4 md:mt-0 items-center">
+                    <img src="assets/moto.jpg" alt="Moto"
+                        class="w-48 h-48 object-cover rounded border-2 border-gray-900 hover:scale-105 modal-image">
+                    <img src="assets/moto2.jpg" alt="Moto 2"
+                        class="w-48 h-48 object-cover rounded border-2 border-gray-900 hover:scale-105 modal-image">
+                </div>
+            </div>
+            <div id="imageModal" class="fixed inset-0 z-50 hidden">
+                <div class="flex items-center justify-center min-h-screen px-4 text-center" onclick="closeModal(event)">
+                    <div class="fixed inset-0 bg-gray-500 opacity-75"></div>
+                    <div
+                        class="inline-block align-middle bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-3xl sm:w-full">
+                        <div class="bg-white p-4 max-h-screen overflow-auto">
+                            <img id="modalImage" src="" alt="Image en grand" class="w-full h-auto">
+                        </div>
+                        <div class="bg-gray-50 px-4 py-3 text-right">
+                            <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded"
+                                onclick="closeModal()">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <p class="pt-6">
                 N'hésitez pas à me contacter pour échanger ou collaborer ! 💼🤝
             </p>

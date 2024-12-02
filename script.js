@@ -41,4 +41,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+function openModal(src) {
+    document.getElementById('modalImage').src = src;
+    document.getElementById('imageModal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal(event) {
+    if (event) {
+        const modalContent = document.querySelector('#imageModal .inline-block');
+        if (!modalContent.contains(event.target)) {
+            document.getElementById('imageModal').classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+    } else {
+        document.getElementById('imageModal').classList.add('hidden');
+        document.body.style.overflow = '';
+    }
+}
+
+// Cibler uniquement les images avec la classe 'modal-image'
+document.querySelectorAll('.modal-image').forEach(img => {
+    img.addEventListener('click', () => openModal(img.src));
+});
+
 
